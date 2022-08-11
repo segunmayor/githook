@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# This program will pull or fetch from a git master repository to update production application incase of any accepted changes from testers
+
+REMOTEGIT = git@gitlab.com:datakript_clients/ijewuru.git
+GITREPO = master
+APPDIR = /var/www/ijewuru.com/
+cd $APPDIR
+
+while [ $APPDIR ];
+    do
+        echo git pull origin $GITREPO
+        break;
+    done
